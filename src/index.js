@@ -98,7 +98,7 @@ var run = function() {
 		// .then(checkUpdate)
 		.then(doUpdate)
 		.catch(function(error){
-			console.log(error);
+			if(error) console.log(error);
 		})
 		.finally(queueNextRun);
 }
