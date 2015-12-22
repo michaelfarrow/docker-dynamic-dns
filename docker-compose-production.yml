@@ -1,0 +1,10 @@
+dns:
+  image: weyforth/rancher-dynamic-dns:latest
+  environment:
+    NODE_RUN_ENV: production
+    ROOT_DOMAIN: 
+    SUB_DOMAIN: 
+    DO_ACCESS_TOKEN: 
+  labels:
+    io.rancher.container.create_agent: 'true'
+  restart: always
